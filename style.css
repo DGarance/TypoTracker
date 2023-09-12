@@ -1,0 +1,59 @@
+/* Réinitialisation des styles par défaut du navigateur */
+body,
+h1,
+p,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style de l'en-tête */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #333; /* Couleur du texte */
+}
+.container {
+  padding: 0 auto;
+  margin: 0 auto;
+}
+/* Style de la zone de texte */
+textarea {
+  width: 100%;
+  max-width: 900px; /* Largeur maximale de la zone de texte */
+  height: 300px; /* Hauteur de la zone de texte */
+  margin: 0 auto; /* Centre la zone de texte horizontalement */
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc; /* Bordure grise */
+}
+
+/* Style du bouton de démarrage */
+.start-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff; /* Couleur de fond du bouton */
+  color: #fff; /* Couleur du texte du bouton */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style des résultats */
+.results {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Style du texte des extraits */
+.text-output {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}

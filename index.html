@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypoTracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                TypoTracker
+            </h1>
+            <div class="score-info">
+                <p class="time">
+                    <span>Temps écoulé</span>
+                    <span>60</span>
+                </p>
+                <p class="score">
+                    <span>Score :</span>
+                    <span>0</span>
+                </p>
+            </div>
+        </div>
+        <textarea class="textarea-to-test" placeholder="Tapez ici..."></textarea>
+        <button class="start-btn">Démarrez le test</button>
+        <p class="sentence-to-write"></p>
+        <div class="game-over" style="display: none;">
+            <h2>Fin du jeu</h2>
+            <p>Votre score final est : <span id="final-score">0</span></p>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
