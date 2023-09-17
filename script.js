@@ -74,6 +74,7 @@ textareaElement.addEventListener("input", changeSentenceIfFinished);
 startButton.addEventListener("click", handleStart);
 
 // Fonction pour gérer le démarrage du jeu
+// Fonction pour gérer le démarrage du jeu
 function handleStart() {
   if (!sentenceElement.textContent) sentenceElement.textContent = "Attendez l'arrivée de la phrase";
   if (timerID) {
@@ -85,15 +86,19 @@ function handleStart() {
   timeElement.classList.add("active");
   textareaElement.classList.add("active");
   timeElement.textContent = `Temps : ${time}`;
+  
+  // Réinitialise le score à zéro au début d'une nouvelle partie
+  totalScore = 0;
   scoreElement.textContent = `Score : ${totalScore}`;
+  
   textareaElement.value = "";
   spansFromJsonSentence.forEach((span) => (span.className = ""));
   textareaElement.addEventListener("input", handleTyping);
   textareaElement.focus();
-  totalScore = 0;
   totalTypedCharacters = 0;
   startTimer();
 }
+
 
 // Fonction pour gérer la saisie de texte
 function handleTyping() {
