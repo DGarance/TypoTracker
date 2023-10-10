@@ -24,14 +24,18 @@
                 </p>
             </div>
         </div>
-        <textarea class="textarea-to-test" placeholder="Tapez ici..."></textarea>
-        <button class="start-btn">Démarrez le test</button>
-        <p class="sentence-to-write"></p>
+        <textarea class="textarea" placeholder="Tapez ici..."></textarea>
+        <p class="sentence"></p>
+        <button class="start-btn" type="button">Démarrer le test</button>
+
         <div class="game-over" style="display: none;">
-            <h2>Fin du jeu</h2>
-            <p class="typing-speed"></p>
-            <p class="typing-accuracy"></p>
-            <p>Votre score final est : <span id="final-score">0</span></p>
+            <div class="game-over-content">
+                <h2>Fin du jeu</h2>
+                <p class="typing-speed"></p>
+                <p class="typing-accuracy"></p>
+                <p>Votre score final est : <span id="final-score">0</span></p>
+                <button class="close-modal">X</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
